@@ -1,0 +1,106 @@
+[debug] [2023-03-23T17:51:19.812Z] ----------------------------------------------------------------------
+[debug] [2023-03-23T17:51:19.814Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-23T17:51:19.814Z] CLI Version:   11.25.1
+[debug] [2023-03-23T17:51:19.815Z] Platform:      win32
+[debug] [2023-03-23T17:51:19.815Z] Node Version:  v16.19.1
+[debug] [2023-03-23T17:51:19.815Z] Time:          Thu Mar 23 2023 19:51:19 GMT+0200 (Israel Standard Time)
+[debug] [2023-03-23T17:51:19.816Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-23T17:51:19.826Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-23T17:51:19.826Z] > authorizing via signed-in user (mrad1999@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Disaster\Desktop\ramadanContest\ramadan-contest
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-23T17:51:43.920Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-03-23T17:51:44.486Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-03-23T17:51:44.487Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ramadan-contest-a9f64 (ramadan-contest) 
+[info] 
+=== Firestore Setup
+[debug] [2023-03-23T17:51:46.797Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ramadan-contest-a9f64/services/firestore.googleapis.com [none]
+[debug] [2023-03-23T17:51:46.798Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ramadan-contest-a9f64/services/firestore.googleapis.com x-goog-quota-user=projects/ramadan-contest-a9f64
+[debug] [2023-03-23T17:51:47.994Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ramadan-contest-a9f64/services/firestore.googleapis.com 200
+[debug] [2023-03-23T17:51:47.994Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ramadan-contest-a9f64/services/firestore.googleapis.com [omitted]
+[debug] [2023-03-23T17:51:47.995Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default) [none]
+[debug] [2023-03-23T17:51:48.519Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default) 200
+[debug] [2023-03-23T17:51:48.519Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default) {"name":"projects/ramadan-contest-a9f64/databases/(default)","uid":"a2f5800e-4e42-4c19-8cd1-4893c68877e8","createTime":"2023-03-23T17:50:23.973312Z","updateTime":"2023-03-23T17:50:23.973312Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IIuejfPO8v0CMMDf+snO8v0C"}
+[debug] [2023-03-23T17:51:48.519Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-03-23T17:51:48.519Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-23T17:51:48.519Z] > authorizing via signed-in user (mrad1999@gmail.com)
+[debug] [2023-03-23T17:51:48.519Z] [iam] checking project ramadan-contest-a9f64 for permissions ["firebase.projects.get"]
+[debug] [2023-03-23T17:51:48.520Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ramadan-contest-a9f64:testIamPermissions [none]
+[debug] [2023-03-23T17:51:48.520Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ramadan-contest-a9f64:testIamPermissions x-goog-quota-user=projects/ramadan-contest-a9f64
+[debug] [2023-03-23T17:51:48.520Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ramadan-contest-a9f64:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-23T17:51:49.865Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ramadan-contest-a9f64:testIamPermissions 200
+[debug] [2023-03-23T17:51:49.865Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ramadan-contest-a9f64:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-23T17:51:56.834Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ramadan-contest-a9f64/releases pageSize=10&pageToken=
+[debug] [2023-03-23T17:51:57.762Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ramadan-contest-a9f64/releases 200
+[debug] [2023-03-23T17:51:57.762Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ramadan-contest-a9f64/releases {"releases":[{"name":"projects/ramadan-contest-a9f64/releases/cloud.firestore","rulesetName":"projects/ramadan-contest-a9f64/rulesets/7918ff5f-e285-4098-b3de-fba6031baa71","createTime":"2023-03-23T17:50:34.198917Z","updateTime":"2023-03-23T17:50:34.198917Z"}]}
+[debug] [2023-03-23T17:51:57.762Z] Found ruleset: projects/ramadan-contest-a9f64/rulesets/7918ff5f-e285-4098-b3de-fba6031baa71
+[debug] [2023-03-23T17:51:57.763Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ramadan-contest-a9f64/rulesets/7918ff5f-e285-4098-b3de-fba6031baa71 [none]
+[debug] [2023-03-23T17:51:58.555Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ramadan-contest-a9f64/rulesets/7918ff5f-e285-4098-b3de-fba6031baa71 200
+[debug] [2023-03-23T17:51:58.555Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ramadan-contest-a9f64/rulesets/7918ff5f-e285-4098-b3de-fba6031baa71 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-23T17:52:03.353Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-03-23T17:52:03.354Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-03-23T17:52:03.878Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-03-23T17:52:03.878Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-03-23T17:52:04.328Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-03-23T17:52:04.328Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ramadan-contest-a9f64/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/ramadan-contest-a9f64/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-03-23T17:52:34.052Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-03-23T17:52:34.151Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-03-23T17:52:34.151Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.18.0","browserURL":"https://www.gstatic.com/firebasejs/9.18.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.18.0/firebase.tgz"},"live":{"version":"9.18","browserURL":"https://www.gstatic.com/firebasejs/live/9.18/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.18/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.18.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.18.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.18.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.18.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.18.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.18.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.18.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.18.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Disaster\Desktop\ramadanContest\ramadan-contest 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=22319969&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-03-23T17:52:38.940Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-03-23T17:52:38.940Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-03-23T17:52:39.343Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-03-23T17:52:39.343Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-03-23T17:52:39.351Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-03-23T17:52:39.764Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-03-23T17:52:39.764Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"mradalteaha","id":59914727,"node_id":"MDQ6VXNlcjU5OTE0NzI3","avatar_url":"https://avatars.githubusercontent.com/u/59914727?v=4","gravatar_id":"","url":"https://api.github.com/users/mradalteaha","html_url":"https://github.com/mradalteaha","followers_url":"https://api.github.com/users/mradalteaha/followers","following_url":"https://api.github.com/users/mradalteaha/following{/other_user}","gists_url":"https://api.github.com/users/mradalteaha/gists{/gist_id}","starred_url":"https://api.github.com/users/mradalteaha/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mradalteaha/subscriptions","organizations_url":"https://api.github.com/users/mradalteaha/orgs","repos_url":"https://api.github.com/users/mradalteaha/repos","events_url":"https://api.github.com/users/mradalteaha/events{/privacy}","received_events_url":"https://api.github.com/users/mradalteaha/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":0,"followers":2,"following":3,"created_at":"2020-01-15T09:35:28Z","updated_at":"2023-03-17T14:52:29Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":50794,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as mradalteaha 
+[info] 
+[debug] [2023-03-23T17:52:54.561Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-03-23T17:52:54.936Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-03-23T17:52:54.936Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
