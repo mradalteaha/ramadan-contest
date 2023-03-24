@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React ,{useState} from "react";
+import Heading from "./components/common/Heading";
+import Footer from "./components/common/Footer";
+import WelcomeComponent from "./components/WelcomeComponent";
+import Container from "./components/common/Container";
+import OpenQuestionCard from "./components/OpenQuestionCard";
+
 
 function App() {
+
+  const [started , setStarted] = useState(false)
+
+
+  function startQuizz(start){
+    console.log(start)
+    setStarted(start)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Heading />
+      <Container>
+      {started ? 
+        <OpenQuestionCard/>
+      :
+      <WelcomeComponent startQuizz={startQuizz}/>}
+      </Container>
+        
+      <Footer />
     </div>
   );
 }
