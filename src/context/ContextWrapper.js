@@ -4,7 +4,7 @@ import Context from "./Context";
 export default function ContextWrapper(props) {
 
   const [currentUser, setCurrentUser] = useState(null);
-  const [quizzAnswers, setQuizzAnswers] = useState([]);
+  const [quizzAnswers, setQuizzAnswers] = useState(new Map());
 
  
 

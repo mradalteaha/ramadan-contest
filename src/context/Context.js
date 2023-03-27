@@ -3,7 +3,7 @@ import React from "react";
 const GlobalContext = React.createContext({
   currentUser:null,
   setCurrentUser:()=>{},
-  quizzAnswers:null,
+  quizzAnswers:new Map(),
   setQuizzAnswers:()=>{}
 });
 
