@@ -1,10 +1,8 @@
 import React ,{useState} from "react";
-import Heading from "./components/common/Heading";
-import Footer from "./components/common/Footer";
-import WelcomeComponent from "./components/WelcomeComponent";
-import Container from "./components/common/Container";
-import OpenQuestionCard from "./components/OpenQuestionCard";
-
+import HomePage from "./pages/HomePage";
+import SignIn from "./pages/SignIn";
+import CheckExams from "./pages/CheckExams";
+import { Routes,Route } from "react-router-dom";
 
 function App() {
 
@@ -16,17 +14,13 @@ function App() {
     setStarted(start)
   }
   return (
-    <div>
-      <Heading />
-      <Container>
-      {started ? 
-        <OpenQuestionCard/>
-      :
-      <WelcomeComponent startQuizz={startQuizz}/>}
-      </Container>
-        
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/SignIn" element={<SignIn/>}/>
+      <Route path="/CheckExams" element={<CheckExams/>}/>
+
+
+    </Routes>
   );
 }
 

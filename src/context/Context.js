@@ -4,7 +4,10 @@ const GlobalContext = React.createContext({
   currentUser:null,
   setCurrentUser:()=>{},
   quizzAnswers:new Map(),
-  setQuizzAnswers:()=>{}
+  setQuizzAnswers:()=>{},
+  adminLog:false,
+  setAdminLog:()=>{},
+  
 });
 
 export default GlobalContext;
