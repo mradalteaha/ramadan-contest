@@ -6,8 +6,11 @@ export default function UserDoc(props){
     const {user} = props
     const {fullName,city,phone} = user
     const Grade= 100
+    function handleClick(){
+        console.log('hehe')
+    }
 
-    return <div className='card'>
+    return <div onClick={handleClick} className='card'>
         <h1 className='h1'>{fullName} :الاسم</h1>
         <h1 className='h1'>{city} :المدينة</h1>
         <h1 className='h1'>{phone}:رقم الهاتف</h1>
