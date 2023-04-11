@@ -19,7 +19,7 @@ const [users,setUsers] = useState([])
 
 
 
-/* useEffect(() => {
+useEffect(() => {
     async function fetchData() {
         let temp =[]
       // You can await here
@@ -34,13 +34,13 @@ const [users,setUsers] = useState([])
       // ...
     }
     fetchData();
-  }, []);  */
+  }, []); 
 
 
 
 
   console.log(adminLog)
-  //console.log(users)
+  
 
   
   if (users.length !==0 && !adminLog){

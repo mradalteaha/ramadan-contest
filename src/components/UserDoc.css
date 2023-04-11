@@ -1,0 +1,21 @@
+.card{
+    background-color: rgba(250, 252, 255, 0.8);
+    width: 250px;
+    border-radius: 30px;
+    padding: 6px;
+    align-items: flex-start;
+    position: relative;
+    opacity: 1;
+    border-color: rgba(250, 243, 177, 0.8);
+    border: 5px solid rgba(250, 243, 177, 0.8); /* sets the border to 2 pixels wide, solid style, and black color */    
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.h1{
+    font-size: small;
+    text-align: right;
+    margin-top: 0;
+}
+.card .hover{
+    border-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+}
