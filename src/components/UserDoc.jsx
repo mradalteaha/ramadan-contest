@@ -2,7 +2,7 @@ import React from 'react'
 import './UserDoc.css'
 import { useNavigate  } from "react-router-dom";
 import {db} from '../firebase'
-import {  getDocs ,collection } from "firebase/firestore";
+import {  getDocs ,collection, updateDoc ,doc} from "firebase/firestore";
 
 
 export default function UserDoc(props){
@@ -10,7 +10,7 @@ export default function UserDoc(props){
     const {fullName,city,phone} = user
     const Grade= 100
     const usersQuizzRef = collection(db,`users/${phone}`,'quizz')
-
+    const userRef =doc(db, "users", phone);
     const navigate = useNavigate();
 
     async function fetchData() {
@@ -23,10 +23,16 @@ export default function UserDoc(props){
              let id =  d.id
               let ob={id ,data}
               //console.log(data)
-              temp.push(ob)
+              if(Object.values(data).filter(x => x.length > 0).length >70){
+                temp.push(ob)
+              }
+              
+
              
             })
-
+            if(temp.length ==0){
+                await updateDoc(userRef,{Grade : "notQualified"})
+            }
             return temp
 
 
