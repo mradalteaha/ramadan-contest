@@ -25,7 +25,7 @@ export default function UsersList(props){
           })}
 
           <div>
-            <button  onClick={nextPage} >الصفحة التالية </button>  <button style={{display:currentUsers==0?'none':''}} onClick={prevPage}>الصفحة السابقة</button>
+            <button  onClick={nextPage} >الصفحة التالية </button>  <button style={{display:currentUsers===0?'none':''}} onClick={prevPage}>الصفحة السابقة</button>
           </div>
     
     </div>

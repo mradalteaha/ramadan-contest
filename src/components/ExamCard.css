@@ -1,0 +1,12 @@
+.card{
+    background-color: rgba(250, 252, 255, 0.9);
+    width: 250px;
+    border-radius: 30px;
+    padding: 6px;
+    align-items: flex-start;
+    position: relative;
+    opacity: 1;
+    border-color: rgba(250, 243, 177, 0.8);
+    border: 5px solid rgba(231, 220, 122, 0.8); /* sets the border to 2 pixels wide, solid style, and black color */    
+    box-shadow:0 2px 20px rgba(37, 102, 133, 0.8);
+}
