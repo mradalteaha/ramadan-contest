@@ -7,10 +7,11 @@ import {  getDocs ,collection } from "firebase/firestore";
 
 export default function UserDoc(props){
     const {user} = props
-    const {fullName,city,phone} = user
+    console.log('user insidde userdoc')
+    const {fullName,city,phone} = user.user
     const Grade= 100
     const usersQuizzRef = collection(db,`users/${phone}`,'quizz')
-
+    console.log(user.user)
     const navigate = useNavigate();
 
     async function fetchData() {

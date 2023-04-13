@@ -8,6 +8,7 @@ export default function UsersList(props){
     const {users} = props
     //console.log(users)
     const[currentUsers,setCurrentUsers]=useState(0)
+    console.log('user List')
     
     function nextPage(){
       setCurrentUsers(curr=> curr+1)
