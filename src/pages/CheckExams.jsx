@@ -89,12 +89,12 @@ useEffect(() => {
      
   }
 
-
+/* 
   console.log(adminLog)
-  console.log(users)
+  console.log(users) */
   
   
-  if (users && !adminLog){
+  if (users && adminLog){
   //console.log('users loaded')
     return (<UsersList users={users}/>)
   }

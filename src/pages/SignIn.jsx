@@ -21,12 +21,12 @@ function SignIn() {
       let LocalPassword = event.target.password.value
 
       const user = await getDoc(accRef)
-      console.log(user.data())
+      //console.log(user.data())
       const {username, password} = user.data()
 
       if(username === LocalUsername && password === LocalPassword){
         setAdminLog(true)
-        console.log("succss")
+        //console.log("succss")
 
         navigate("/CheckExams");
       }

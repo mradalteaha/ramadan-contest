@@ -16,7 +16,7 @@ export default function StudentExam(props){
 
     const {student,quizz}=location.state
     console.log('printing quizz')
-    console.log(quizz)
+    //console.log(quizz)
     const questionsBank = quizz
     const [currentQuestion,setcurrentQuestion] = useState(0)
     const [prevQuestionVisiability,setPrevQuestionVisiablity] =useState('hidden')
@@ -31,7 +31,7 @@ export default function StudentExam(props){
 
 
     function handleSelection(exam){
-        console.log(exam)
+        //console.log(exam)
 
     }
 
@@ -132,7 +132,7 @@ export default function StudentExam(props){
             
            updateDoc(userRef, { grade:score }).then(res => {
             console.log('updated successfully ')
-            console.log(res)
+           // console.log(res)
             navigate("/CheckExams");
 
            } )
