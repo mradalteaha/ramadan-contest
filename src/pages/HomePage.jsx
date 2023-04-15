@@ -11,18 +11,13 @@ function HomePage() {
     const [started , setStarted] = useState(false)
   
   
-    function startQuizz(start){
-      console.log(start)
-      setStarted(start)
-    }
+  
     return (
       <div> 
         <Heading />
         <Container>
-        {started ? 
-          <OpenQuestionCard/>
-        :
-        <WelcomeComponent startQuizz={startQuizz}/>}
+        {
+        <WelcomeComponent/>}
         </Container>
           
         <Footer />

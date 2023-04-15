@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<CheckExams/>}/>
+      <Route path="/" element={<HomePage/>}/>
       <Route path="/SignIn" element={<SignIn/>}/>
       <Route path="/CheckExams" element={<CheckExams/>}/>
       <Route path="/StudentExam" element={<StudentExam/>}/>
